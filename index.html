@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Komputer Utama — Rakit PC, Servis &amp; Upgrade di Solo</title>
+  <meta name="description" content="Komputer Utama: toko komputer di Solo untuk rakit PC custom, servis laptop, upgrade komponen, dan pengadaan IT kantor. Konsultasi gratis, garansi jelas." />
+  <meta name="theme-color" content="#070b16" />
+  <meta property="og:title" content="Komputer Utama — Rakit PC, Servis &amp; Upgrade di Solo" />
+  <meta property="og:description" content="Rakit PC impian, servis tanpa drama. Konsultasi gratis, garansi toko 1 tahun." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
+  <!-- ============ ICON SPRITE ============ -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5v4h3v7h4v-7h3.2l.8-4H12V7.5c0-.6.4-1 1-1h2z"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14M10 11v6M14 11v6"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-3 8-10V5l-8-3-8 3v7c0 7 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></symbol>
+    <symbol id="i-laptop" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20l-2-4H4z"/></symbol>
+    <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="2.5" y="13" width="4.5" height="7" rx="2"/><rect x="17" y="13" width="4.5" height="7" rx="2"/><path d="M19 20a3 3 0 0 1-3 2h-3"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+    <symbol id="i-package" viewBox="0 0 24 24"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5M12 13v8"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></symbol>
+  </svg>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Komputer Utama — kembali ke atas">
+        <span class="logo__mark"><svg class="ico"><use href="#i-monitor"/></svg></span>
+        <span class="logo__text">Komputer Utama<small>Solo · sejak 2013</small></span>
+        <span class="pill-demo">DEMO</span>
+      </a>
+
+      <nav class="nav" aria-label="Navigasi utama">
+        <a href="#layanan" class="nav__link">Layanan</a>
+        <a href="#produk" class="nav__link">Produk</a>
+        <a href="#rakitan" class="nav__link">Rakitan</a>
+        <a href="#promo" class="nav__link">Promo</a>
+        <a href="#kontak" class="nav__link">Kontak</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Ganti tema terang / gelap">
+          <svg class="ico ico--sun"><use href="#i-sun"/></svg>
+          <svg class="ico ico--moon"><use href="#i-moon"/></svg>
+        </button>
+        <button class="icon-btn cart-btn" id="cartOpen" type="button" aria-label="Buka keranjang belanja">
+          <svg class="ico"><use href="#i-cart"/></svg>
+          <span class="cart-count" id="cartCount" hidden>0</span>
+        </button>
+        <a class="btn btn--primary header__cta js-wa" data-wa-text="Halo Komputer Utama! Saya mau konsultasi soal komputer." href="https://wa.me/6281234567890" target="_blank" rel="noopener">
+          <svg class="ico"><use href="#i-whatsapp"/></svg><span>Chat toko</span>
+        </a>
+        <button class="icon-btn menu-btn" id="navToggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Buka menu navigasi">
+          <svg class="ico ico--menu"><use href="#i-menu"/></svg>
+          <svg class="ico ico--close"><use href="#i-x"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <nav aria-label="Navigasi mobile">
+        <a href="#layanan">Layanan</a>
+        <a href="#produk">Produk</a>
+        <a href="#rakitan">Rakitan</a>
+        <a href="#promo">Promo</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <a class="btn btn--primary btn--block js-wa" data-wa-text="Halo Komputer Utama! Saya mau konsultasi soal komputer." href="https://wa.me/6281234567890" target="_blank" rel="noopener">
+        <svg class="ico"><use href="#i-whatsapp"/></svg> Konsultasi gratis
+      </a>
+      <p class="mobile-nav__note">Senin–Sabtu 09.00–20.00 · Minggu 10.00–17.00</p>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <span class="eyebrow" data-reveal>Rakit · Servis · Upgrade</span>
+          <h1 data-reveal data-delay="1">Rakit PC impian.<br /><span class="grad-text">Servis tanpa drama.</span></h1>
+          <p class="hero__lead" data-reveal data-delay="2">
+            Dari rakitan custom, laptop kerja, sampai upgrade SSD — kami bantu pilih yang pas
+            dengan kebutuhan dan budgetmu. Konsultasi gratis, garansi jelas.
+          </p>
+          <div class="hero__cta" data-reveal data-delay="3">
+            <a class="btn btn--primary btn--lg" href="#produk">
+              Lihat produk <svg class="ico"><use href="#i-arrow-right"/></svg>
+            </a>
+            <a class="btn btn--ghost btn--lg js-wa" data-wa-text="Halo Komputer Utama! Saya mau konsultasi gratis dulu sebelum beli." href="https://wa.me/6281234567890" target="_blank" rel="noopener">
+              <svg class="ico"><use href="#i-whatsapp"/></svg> Konsultasi gratis
+            </a>
+          </div>
+          <ul class="hero__checks" data-reveal data-delay="4">
+            <li><svg class="ico"><use href="#i-check"/></svg> Garansi toko 1 tahun</li>
+            <li><svg class="ico"><use href="#i-check"/></svg> Servis same-day</li>
+            <li><svg class="ico"><use href="#i-check"/></svg> Bisa cicil</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" data-reveal data-delay="2">
+          <article class="hero-card">
+            <div class="hero-card__top">
+              <span class="tag tag--glow">Rakitan terlaris</span>
+              <span class="stock"><i></i> Ready stok</span>
+            </div>
+            <div class="hero-card__art">
+              <svg viewBox="0 0 460 320" role="img" aria-label="Ilustrasi PC rakitan dengan pencahayaan RGB">
+                <defs>
+                  <linearGradient id="heroGlass" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#142846"/><stop offset=".55" stop-color="#0a1424"/><stop offset="1" stop-color="#122440"/>
+                  </linearGradient>
+                  <linearGradient id="heroEdge" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#22d3ee"/>
+                  </linearGradient>
+                  <radialGradient id="heroHalo"><stop offset="0" stop-color="#2563eb" stop-opacity=".5"/><stop offset="1" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+                  <linearGradient id="heroStrip" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#0f1c31"/><stop offset="1" stop-color="#0a1425"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="232" cy="150" r="150" fill="url(#heroHalo)"/>
+                <ellipse cx="232" cy="294" rx="146" ry="16" fill="#02060f" opacity=".6"/>
+                <path d="M92 290h282l-25-19H117z" fill="#0a1428" stroke="#1d3050"/>
+                <rect x="147" y="48" width="170" height="228" rx="16" fill="#091120" stroke="#274067" stroke-width="2"/>
+                <rect x="147" y="48" width="170" height="14" rx="7" fill="#152947"/>
+                <path d="M160 55h144" stroke="#2b4a75" stroke-width="2" stroke-linecap="round"/>
+                <rect x="161" y="76" width="104" height="166" rx="10" fill="url(#heroGlass)" stroke="#2b4a75"/>
+                <g class="fan">
+                  <circle cx="213" cy="112" r="22" fill="#07101f" stroke="#22d3ee" stroke-opacity=".55" stroke-width="2"/>
+                  <circle cx="213" cy="112" r="15" fill="none" stroke="#22d3ee" stroke-opacity=".22"/>
+                  <path d="M213 112V97a15 15 0 0 1 13 22.5z" fill="#22d3ee" opacity=".85"/>
+                  <path d="M213 112V97a15 15 0 0 1 13 22.5z" fill="#38bdf8" opacity=".75" transform="rotate(120 213 112)"/>
+                  <path d="M213 112V97a15 15 0 0 1 13 22.5z" fill="#818cf8" opacity=".75" transform="rotate(240 213 112)"/>
+                  <circle cx="213" cy="112" r="3.5" fill="#e0f2fe"/>
+                </g>
+                <g class="fan" style="animation-delay:-2.5s">
+                  <circle cx="213" cy="160" r="22" fill="#07101f" stroke="#3b82f6" stroke-opacity=".5" stroke-width="2"/>
+                  <circle cx="213" cy="160" r="15" fill="none" stroke="#3b82f6" stroke-opacity=".22"/>
+                  <path d="M213 160v-15a15 15 0 0 1 13 22.5z" fill="#3b82f6" opacity=".8"/>
+                  <path d="M213 160v-15a15 15 0 0 1 13 22.5z" fill="#60a5fa" opacity=".7" transform="rotate(120 213 160)"/>
+                  <path d="M213 160v-15a15 15 0 0 1 13 22.5z" fill="#22d3ee" opacity=".7" transform="rotate(240 213 160)"/>
+                  <circle cx="213" cy="160" r="3.5" fill="#dbeafe"/>
+                </g>
+                <g class="fan" style="animation-delay:-5s">
+                  <circle cx="213" cy="208" r="22" fill="#07101f" stroke="#8b5cf6" stroke-opacity=".5" stroke-width="2"/>
+                  <circle cx="213" cy="208" r="15" fill="none" stroke="#8b5cf6" stroke-opacity=".25"/>
+                  <path d="M213 208v-15a15 15 0 0 1 13 22.5z" fill="#8b5cf6" opacity=".8"/>
+                  <path d="M213 208v-15a15 15 0 0 1 13 22.5z" fill="#a78bfa" opacity=".7" transform="rotate(120 213 208)"/>
+                  <path d="M213 208v-15a15 15 0 0 1 13 22.5z" fill="#22d3ee" opacity=".6" transform="rotate(240 213 208)"/>
+                  <circle cx="213" cy="208" r="3.5" fill="#ede9fe"/>
+                </g>
+                <rect x="272" y="76" width="30" height="166" rx="7" fill="url(#heroStrip)" stroke="#243b5c"/>
+                <circle cx="287" cy="94" r="3" fill="#22d3ee"/>
+                <circle cx="287" cy="108" r="3" fill="#3b82f6"/>
+                <path d="M280 250h14" stroke="#22385a" stroke-width="4" stroke-linecap="round"/>
+                <rect x="161" y="250" width="141" height="12" rx="6" fill="#0b1729"/>
+                <path d="M170 256h60" stroke="url(#heroEdge)" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="287" cy="256" r="5" fill="none" stroke="#22d3ee" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="hero-card__body">
+              <div class="hero-card__name">
+                <div>
+                  <h2>Rakit Hemat</h2>
+                  <p>Ryzen 5 5600G · 16GB · 512GB NVMe</p>
+                </div>
+                <span class="rating-pill"><svg class="ico"><use href="#i-star"/></svg> 4.9</span>
+              </div>
+              <div class="hero-card__row">
+                <div class="price price--lg">
+                  Rp4.850.000
+                  <s>Rp5.300.000</s>
+                </div>
+                <button class="btn btn--white btn--sm" type="button" data-open-product="pc-hemat">Lihat detail</button>
+              </div>
+            </div>
+          </article>
+          <div class="float-chip float-chip--a">
+            <span class="float-chip__ico"><svg class="ico"><use href="#i-shield"/></svg></span>
+            <div><strong>Garansi 1 tahun</strong><small>Resmi + garansi toko</small></div>
+          </div>
+          <div class="float-chip float-chip--b">
+            <span class="float-chip__ico float-chip__ico--star"><svg class="ico"><use href="#i-star"/></svg></span>
+            <div><strong>4.9 dari 5</strong><small>1.200+ ulasan pelanggan</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero-stats" data-reveal>
+          <div class="stat"><strong data-count="12" data-suffix="+">12+</strong><span>Tahun pengalaman</span></div>
+          <div class="stat"><strong data-count="8400" data-suffix="+">8.400+</strong><span>Pelanggan puas</span></div>
+          <div class="stat"><strong data-count="1200" data-suffix="+">1.200+</strong><span>Unit dirakit &amp; diservis</span></div>
+          <div class="stat"><strong>4,9<span>/5</span></strong><span>Rating pelanggan</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BRAND STRIP ============ -->
+    <div class="brand-strip" aria-label="Merek yang tersedia">
+      <div class="marquee">
+        <div class="marquee__track">
+          <span>ASUS</span><i></i><span>MSI</span><i></i><span>Lenovo</span><i></i><span>AMD</span><i></i><span>Intel</span><i></i><span>NVIDIA</span><i></i><span>Logitech</span><i></i><span>Kingston</span><i></i><span>Corsair</span><i></i><span>Samsung</span><i></i>
+          <span>ASUS</span><i></i><span>MSI</span><i></i><span>Lenovo</span><i></i><span>AMD</span><i></i><span>Intel</span><i></i><span>NVIDIA</span><i></i><span>Logitech</span><i></i><span>Kingston</span><i></i><span>Corsair</span><i></i><span>Samsung</span><i></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ LAYANAN ============ -->
+    <section class="section" id="layanan">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Layanan kami</span>
+          <h2>Satu tempat untuk semua urusan komputer</h2>
+          <p>Dari rakit baru sampai perawatan rutin — dikerjakan teknisi yang sama, dengan penjelasan yang mudah dimengerti.</p>
+        </div>
+        <div class="service-grid">
+          <article class="card service" data-reveal data-delay="1">
+            <span class="service__ico"><svg class="ico"><use href="#i-cpu"/></svg></span>
+            <h3>Rakit PC custom</h3>
+            <p>Komponen dipilih sesuai kebutuhan, bukan sekadar yang paling mahal. Rapi, teruji, dan siap pakai.</p>
+            <ul class="ticks">
+              <li><svg class="ico"><use href="#i-check"/></svg> Konsultasi spek &amp; budget</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Cable management rapi</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Stress test sebelum serah</li>
+            </ul>
+          </article>
+          <article class="card service" data-reveal data-delay="2">
+            <span class="service__ico service__ico--cyan"><svg class="ico"><use href="#i-wrench"/></svg></span>
+            <h3>Servis &amp; perbaikan</h3>
+            <p>Laptop panas, mati total, atau lemot? Kami diagnosa dulu, baru kasih estimasi biaya.</p>
+            <ul class="ticks">
+              <li><svg class="ico"><use href="#i-check"/></svg> Diagnosa awal gratis</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Part original &amp; bergaransi</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Garansi servis 30 hari</li>
+            </ul>
+          </article>
+          <article class="card service" data-reveal data-delay="3">
+            <span class="service__ico service__ico--violet"><svg class="ico"><use href="#i-laptop"/></svg></span>
+            <h3>Instalasi &amp; upgrade</h3>
+            <p>Pasang OS, driver, software kerja, atau upgrade SSD dan RAM agar terasa seperti baru.</p>
+            <ul class="ticks">
+              <li><svg class="ico"><use href="#i-check"/></svg> Windows / Linux / macOS</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Pindah data aman</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Optimasi performa</li>
+            </ul>
+          </article>
+          <article class="card service" data-reveal data-delay="4">
+            <span class="service__ico service__ico--amber"><svg class="ico"><use href="#i-shield"/></svg></span>
+            <h3>IT support bisnis</h3>
+            <p>Untuk kantor, sekolah, dan coffee shop: pengadaan unit, jaringan, dan maintenance bulanan.</p>
+            <ul class="ticks">
+              <li><svg class="ico"><use href="#i-check"/></svg> Paket maintenance</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Pengadaan unit kantor</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> On-site area Solo</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRODUK ============ -->
+    <section class="section section--soft" id="produk">
+      <div class="container">
+        <div class="section-head section-head--row" data-reveal>
+          <div>
+            <span class="eyebrow">Katalog pilihan</span>
+            <h2>Perangkat &amp; komponen siap pakai</h2>
+            <p>Harga sudah termasuk garansi toko. Stok demo — konfirmasi ketersediaan lewat WhatsApp.</p>
+          </div>
+          <div class="catalog-tools">
+            <label class="search">
+              <svg class="ico"><use href="#i-search"/></svg>
+              <input type="search" id="productSearch" placeholder="Cari produk…" aria-label="Cari produk" autocomplete="off" />
+            </label>
+          </div>
+        </div>
+
+        <div class="filters" id="filters" role="group" aria-label="Filter kategori produk" data-reveal>
+          <button class="chip is-active" type="button" data-filter="all">Semua <span>11</span></button>
+          <button class="chip" type="button" data-filter="pc">PC Rakitan <span>2</span></button>
+          <button class="chip" type="button" data-filter="laptop">Laptop <span>2</span></button>
+          <button class="chip" type="button" data-filter="monitor">Monitor <span>2</span></button>
+          <button class="chip" type="button" data-filter="aksesoris">Aksesoris <span>3</span></button>
+          <button class="chip" type="button" data-filter="sparepart">Sparepart <span>2</span></button>
+        </div>
+
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+        <div class="empty" id="emptyState" hidden>
+          <svg class="ico"><use href="#i-search"/></svg>
+          <h3>Produk tidak ditemukan</h3>
+          <p>Coba kata kunci lain atau lihat semua kategori.</p>
+          <button class="btn btn--ghost btn--sm" type="button" id="resetSearch">Reset pencarian</button>
+        </div>
+        <p class="catalog-note" data-reveal>
+          <svg class="ico"><use href="#i-whatsapp"/></svg>
+          Butuh spek yang belum ada di katalog? <a class="js-wa" data-wa-text="Halo Komputer Utama! Saya mau tanya spek yang belum ada di katalog." href="https://wa.me/6281234567890" target="_blank" rel="noopener">Minta rekomendasi</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ ESTIMATOR RAKITAN ============ -->
+    <section class="section" id="rakitan">
+      <div class="container">
+        <div class="builder" data-reveal>
+          <div class="builder__glow" aria-hidden="true"></div>
+          <div class="builder__copy">
+            <span class="eyebrow">Rakit sesukamu</span>
+            <h2>Bingung mulai dari mana?<br />Cek rekomendasi rakitan.</h2>
+            <p class="builder__lead">Pilih kebutuhan dan geser budget — kami tampilkan rakitan yang paling masuk akal untukmu.</p>
+
+            <div class="usecase" id="usecaseGroup" role="group" aria-label="Pilih kebutuhan">
+              <button class="usecase__btn is-active" type="button" data-usecase="kerja">
+                <svg class="ico"><use href="#i-laptop"/></svg><span>Kerja &amp; sekolah</span>
+              </button>
+              <button class="usecase__btn" type="button" data-usecase="gaming">
+                <svg class="ico"><use href="#i-zap"/></svg><span>Gaming</span>
+              </button>
+              <button class="usecase__btn" type="button" data-usecase="desain">
+                <svg class="ico"><use href="#i-spark"/></svg><span>Desain &amp; editing</span>
+              </button>
+              <button class="usecase__btn" type="button" data-usecase="streaming">
+                <svg class="ico"><use href="#i-headset"/></svg><span>Streaming</span>
+              </button>
+            </div>
+
+            <div class="budget">
+              <div class="budget__head">
+                <label for="budgetRange">Budget maksimal</label>
+                <output class="budget__value" id="budgetValue" for="budgetRange">Rp9.000.000</output>
+              </div>
+              <input type="range" id="budgetRange" min="3000000" max="25000000" step="250000" value="9000000" aria-label="Budget maksimal dalam rupiah" />
+              <div class="budget__scale"><span>Rp3 jt</span><span>Rp14 jt</span><span>Rp25 jt</span></div>
+            </div>
+            <p class="builder__small">Estimasi harga komponen, belum termasuk monitor &amp; aksesoris. Harga final menyesuaikan stok.</p>
+          </div>
+
+          <div class="result" aria-live="polite">
+            <div class="result__head">
+              <span class="result__label">Rekomendasi untukmu</span>
+              <span class="result__badge" id="resultBadge">Kerja &amp; sekolah</span>
+            </div>
+            <div class="result__ico" id="resultIcon"><svg class="ico"><use href="#i-laptop"/></svg></div>
+            <h3 id="resultName">Rakit Produktif</h3>
+            <p class="result__desc" id="resultDesc">Mulus untuk Office, browsing banyak tab, dan kelas online.</p>
+            <div class="result__specs" id="resultSpecs"></div>
+            <div class="result__price">
+              <span>Estimasi biaya</span>
+              <strong id="resultPrice">Rp5.400.000</strong>
+              <small id="resultNote">Pas dengan budgetmu.</small>
+            </div>
+            <a class="btn btn--primary btn--block js-builder-wa" id="builderWa" href="https://wa.me/6281234567890" target="_blank" rel="noopener">
+              <svg class="ico"><use href="#i-whatsapp"/></svg> Tanya spek ini
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROMO ============ -->
+    <section class="section section--tight" id="promo">
+      <div class="container">
+        <div class="promo" data-reveal>
+          <div class="promo__copy">
+            <span class="tag tag--light">Paket bulan ini</span>
+            <h2>Servis ringan,<br />laptop balik ngebut.</h2>
+            <p>Bersih total debu &amp; kipas, ganti pasta thermal, instal ulang sistem, dan cek kesehatan hardware.</p>
+            <ul class="promo__list">
+              <li><svg class="ico"><use href="#i-check"/></svg> Pembersihan menyeluruh</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Instal ulang OS + driver</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Laporan kondisi komponen</li>
+            </ul>
+            <a class="btn btn--white btn--lg js-wa" data-wa-text="Halo Komputer Utama! Saya mau ambil Paket Servis Ringan Rp500.000." href="https://wa.me/6281234567890" target="_blank" rel="noopener">
+              <svg class="ico"><use href="#i-whatsapp"/></svg> Ambil paket
+            </a>
+          </div>
+          <div class="promo__ticket">
+            <span class="promo__ribbon">Hemat Rp150.000</span>
+            <div class="promo__ticket-top">
+              <span>Paket servis ringan</span>
+              <strong>Rp500.000</strong>
+              <s>Rp650.000</s>
+            </div>
+            <div class="promo__ticket-dash" aria-hidden="true"></div>
+            <ul>
+              <li><span>Durasi pengerjaan</span><strong>1–2 hari</strong></li>
+              <li><span>Garansi servis</span><strong>30 hari</strong></li>
+              <li><span>Berlaku sampai</span><strong>31 Okt 2026</strong></li>
+            </ul>
+            <p class="promo__fine">Harga contoh untuk situs demo. Kuota 20 unit/bulan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROSES ============ -->
+    <section class="section" id="proses">
+      <div class="container">
+        <div class="section-head section-head--center" data-reveal>
+          <span class="eyebrow">Alur kerja</span>
+          <h2>Empat langkah, komputer beres</h2>
+          <p>Transparan dari awal: kamu tahu apa yang dikerjakan dan berapa biayanya sebelum mulai.</p>
+        </div>
+        <ol class="steps">
+          <li class="step" data-reveal data-delay="1">
+            <span class="step__num">01</span>
+            <h3>Konsultasi</h3>
+            <p>Ceritakan kebutuhan dan budget. Kami sarankan opsi paling efisien, bukan yang paling untung.</p>
+          </li>
+          <li class="step" data-reveal data-delay="2">
+            <span class="step__num">02</span>
+            <h3>Konfirmasi</h3>
+            <p>Spek &amp; biaya disepakati dulu. Tidak ada biaya kejutan di akhir pengerjaan.</p>
+          </li>
+          <li class="step" data-reveal data-delay="3">
+            <span class="step__num">03</span>
+            <h3>Pengerjaan</h3>
+            <p>Dirakit atau diservis oleh teknisi, lalu diuji stress test sebelum diserahkan.</p>
+          </li>
+          <li class="step" data-reveal data-delay="4">
+            <span class="step__num">04</span>
+            <h3>Serah terima</h3>
+            <p>Kami jelaskan hasilnya, serahkan garansi, dan siap bantu kalau ada kendala.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONI ============ -->
+    <section class="section section--soft" id="testimoni">
+      <div class="container">
+        <div class="section-head section-head--center" data-reveal>
+          <span class="eyebrow">Kata pelanggan</span>
+          <h2>Mereka sudah membuktikan</h2>
+          <p>Cerita nyata dari pelanggan demo — dari mahasiswa sampai tim IT kantor.</p>
+        </div>
+
+        <div class="slider" id="testimonialSlider" data-reveal>
+          <button class="slider__nav slider__nav--prev" type="button" id="prevTesti" aria-label="Testimoni sebelumnya">
+            <svg class="ico"><use href="#i-chevron-left"/></svg>
+          </button>
+          <div class="slider__viewport">
+            <div class="slider__track" id="testiTrack">
+              <article class="testi">
+                <div class="testi__stars" aria-label="Rating 5 dari 5"><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg></div>
+                <blockquote>“Rakit PC buat editing 4K, budget saya terbatas. Dikasih dua opsi lengkap plus alasannya, hasilnya mulus dan render jauh lebih cepat.”</blockquote>
+                <div class="testi__author"><span class="avatar avatar--blue">RP</span><div><strong>Rizky Pratama</strong><span>Freelance video editor</span></div></div>
+              </article>
+              <article class="testi">
+                <div class="testi__stars" aria-label="Rating 5 dari 5"><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg></div>
+                <blockquote>“Laptop mati total kena cairan. Dua hari kemudian sudah nyala lagi dan datanya utuh. Harganya juga sesuai estimasi awal, tidak ada tambahan aneh.”</blockquote>
+                <div class="testi__author"><span class="avatar avatar--cyan">AR</span><div><strong>Anisa Rahma</strong><span>Mahasiswa UNS</span></div></div>
+              </article>
+              <article class="testi">
+                <div class="testi__stars" aria-label="Rating 5 dari 5"><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg></div>
+                <blockquote>“Beli 12 unit untuk lab kantor. Instalasi dan penataan jaringan dikerjakan rapi, setelah serah terima masih dibantu kalau ada kendala.”</blockquote>
+                <div class="testi__author"><span class="avatar avatar--violet">BS</span><div><strong>Bimo Santoso</strong><span>IT Support, perusahaan logistik</span></div></div>
+              </article>
+              <article class="testi">
+                <div class="testi__stars" aria-label="Rating 5 dari 5"><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg></div>
+                <blockquote>“Upgrade SSD dan RAM di laptop lama. Boot dari dua menit jadi 15 detik, rasanya kayak beli laptop baru tapi hemat setengah budget.”</blockquote>
+                <div class="testi__author"><span class="avatar avatar--emerald">DK</span><div><strong>Dewi Kartika</strong><span>Pemilik butik online</span></div></div>
+              </article>
+            </div>
+          </div>
+          <button class="slider__nav slider__nav--next" type="button" id="nextTesti" aria-label="Testimoni berikutnya">
+            <svg class="ico"><use href="#i-chevron-right"/></svg>
+          </button>
+        </div>
+        <div class="slider__dots" id="testiDots" role="tablist" aria-label="Pilih testimoni"></div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq">
+      <div class="container faq">
+        <div class="faq__head" data-reveal>
+          <span class="eyebrow">FAQ</span>
+          <h2>Pertanyaan yang sering muncul</h2>
+          <p>Masih ada yang ingin ditanyakan? Chat kami langsung — dijawab manusia, bukan bot.</p>
+          <a class="btn btn--ghost js-wa" data-wa-text="Halo Komputer Utama! Saya mau tanya-tanya dulu." href="https://wa.me/6281234567890" target="_blank" rel="noopener">
+            <svg class="ico"><use href="#i-whatsapp"/></svg> Tanya via WhatsApp
+          </a>
+        </div>
+        <div class="faq__list" data-reveal>
+          <details class="faq__item">
+            <summary><span>Berapa lama proses rakit PC?</span><span class="faq__plus"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+            <div class="faq__body"><p>Umumnya 1–2 hari kerja setelah komponen dikonfirmasi dan pembayaran DP diterima. Untuk spek tertentu yang stoknya harus dipesan, kami informasikan estimasinya di awal.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary><span>Apakah ada garansi?</span><span class="faq__plus"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+            <div class="faq__body"><p>Semua unit baru bergaransi resmi distributor, ditambah garansi toko 1 tahun untuk jasa rakit. Servis bergaransi 30 hari untuk keluhan yang sama.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary><span>Bisa cicil atau bayar bertahap?</span><span class="faq__plus"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+            <div class="faq__body"><p>Bisa. Kami menerima kartu kredit dan partner paylater (simulasi demo). Untuk pembelian kantor, tersedia pembayaran via invoice dengan termin yang disepakati.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary><span>Servis bisa di rumah atau harus bawa ke toko?</span><span class="faq__plus"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+            <div class="faq__body"><p>Untuk area Solo dan sekitarnya tersedia layanan on-site dengan biaya kunjungan. Di luar area itu, perangkat bisa dikirim atau dibawa langsung ke toko.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary><span>Boleh konsultasi dulu tanpa beli?</span><span class="faq__plus"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+            <div class="faq__body"><p>Tentu. Konsultasi spek dan estimasi biaya gratis lewat WhatsApp atau datang langsung. Kami bantu memetakan kebutuhan sebelum kamu memutuskan.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ KONTAK ============ -->
+    <section class="section section--soft" id="kontak">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__info" data-reveal>
+            <span class="eyebrow">Hubungi kami</span>
+            <h2>Mampir, telepon, atau chat — kami siap.</h2>
+            <p class="contact__lead">Ceritakan kendala atau rencanamu. Kami balas di jam operasional, biasanya kurang dari 15 menit.</p>
+            <ul class="contact__list">
+              <li>
+                <span class="contact__ico"><svg class="ico"><use href="#i-pin"/></svg></span>
+                <div><strong>Alamat toko</strong><span>Jl. Slamet Riyadi No. 128, Solo, Jawa Tengah <em>(alamat demo)</em></span></div>
+              </li>
+              <li>
+                <span class="contact__ico"><svg class="ico"><use href="#i-whatsapp"/></svg></span>
+                <div><strong>WhatsApp</strong><a class="js-wa" data-wa-text="Halo Komputer Utama! Saya mau tanya-tanya." href="https://wa.me/6281234567890" target="_blank" rel="noopener">0812-3456-7890</a> <em>(nomor demo)</em></div>
+              </li>
+              <li>
+                <span class="contact__ico"><svg class="ico"><use href="#i-mail"/></svg></span>
+                <div><strong>Email</strong><a href="mailto:halo@komputerutama.id">halo@komputerutama.id</a></div>
+              </li>
+              <li>
+                <span class="contact__ico"><svg class="ico"><use href="#i-clock"/></svg></span>
+                <div><strong>Jam buka</strong><span>Senin–Sabtu 09.00–20.00 · Minggu 10.00–17.00</span></div>
+              </li>
+            </ul>
+            <div class="contact__map" aria-hidden="true">
+              <div class="contact__map-grid"></div>
+              <span class="contact__pin"><svg class="ico"><use href="#i-pin"/></svg></span>
+              <span class="contact__map-label">Solo · Jawa Tengah</span>
+            </div>
+          </div>
+
+          <div class="contact__form card" data-reveal data-delay="2">
+            <h3>Kirim pesan cepat</h3>
+            <p class="contact__form-sub">Isi form, lalu pesan akan diteruskan ke WhatsApp toko. Tidak ada data yang disimpan di server.</p>
+            <form id="contactForm" novalidate>
+              <div class="form-grid">
+                <label class="field"><span>Nama</span><input type="text" name="nama" placeholder="Nama kamu" autocomplete="name" required /></label>
+                <label class="field"><span>Nomor WhatsApp</span><input type="tel" name="wa" placeholder="08xx xxxx xxxx" inputmode="tel" autocomplete="tel" required /></label>
+              </div>
+              <label class="field"><span>Kebutuhan</span>
+                <select name="kebutuhan" required>
+                  <option value="">Pilih kebutuhan</option>
+                  <option>Rakit PC baru</option>
+                  <option>Servis / perbaikan</option>
+                  <option>Upgrade komponen</option>
+                  <option>Pengadaan kantor</option>
+                  <option>Lainnya</option>
+                </select>
+              </label>
+              <label class="field"><span>Pesan</span><textarea name="pesan" rows="4" placeholder="Ceritakan kebutuhan atau kendalanya…" required></textarea></label>
+              <label class="consent">
+                <input type="checkbox" name="consent" required />
+                <span>Saya setuju pesan ini diteruskan ke WhatsApp toko.</span>
+              </label>
+              <button class="btn btn--primary btn--block" type="submit">
+                <svg class="ico"><use href="#i-send"/></svg> Kirim via WhatsApp
+              </button>
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="logo" href="#top" aria-label="Komputer Utama — kembali ke atas">
+          <span class="logo__mark"><svg class="ico"><use href="#i-monitor"/></svg></span>
+          <span class="logo__text">Komputer Utama<small>Solo · sejak 2013</small></span>
+        </a>
+        <p>Toko komputer keluarga di Solo. Rakit PC, servis, upgrade, dan bantuan IT untuk rumah maupun bisnis.</p>
+        <div class="footer__social">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram (contoh)"><svg class="ico"><use href="#i-instagram"/></svg></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook (contoh)"><svg class="ico"><use href="#i-facebook"/></svg></a>
+          <a class="js-wa" data-wa-text="Halo Komputer Utama!" href="https://wa.me/6281234567890" target="_blank" rel="noopener" aria-label="WhatsApp toko"><svg class="ico"><use href="#i-whatsapp"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Navigasi</h4>
+        <a href="#layanan">Layanan</a>
+        <a href="#produk">Produk</a>
+        <a href="#rakitan">Rekomendasi rakitan</a>
+        <a href="#promo">Promo</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer__col">
+        <h4>Layanan</h4>
+        <a href="#layanan">Rakit PC custom</a>
+        <a href="#layanan">Servis &amp; perbaikan</a>
+        <a href="#layanan">Instalasi software</a>
+        <a href="#layanan">IT support bisnis</a>
+      </div>
+      <div class="footer__col">
+        <h4>Kontak</h4>
+        <a href="#kontak">Jl. Slamet Riyadi No. 128, Solo</a>
+        <a class="js-wa" data-wa-text="Halo Komputer Utama!" href="https://wa.me/6281234567890" target="_blank" rel="noopener">0812-3456-7890</a>
+        <a href="mailto:halo@komputerutama.id">halo@komputerutama.id</a>
+        <span>Senin–Sabtu 09.00–20.00</span>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> Komputer Utama · Demo_webtokocumputama</p>
+      <p class="footer__note">Situs demo — produk, harga, dan kontak adalah contoh.</p>
+    </div>
+  </footer>
+
+  <!-- ============ FLOATING BUTTONS ============ -->
+  <div class="float-actions">
+    <button class="to-top" id="toTop" type="button" aria-label="Kembali ke atas">
+      <svg class="ico"><use href="#i-arrow-up"/></svg>
+    </button>
+    <a class="wa-float js-wa" data-wa-text="Halo Komputer Utama! Saya mau konsultasi." href="https://wa.me/6281234567890" target="_blank" rel="noopener" aria-label="Chat WhatsApp toko">
+      <svg class="ico"><use href="#i-whatsapp"/></svg>
+      <span class="wa-float__pulse" aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <!-- ============ CART DRAWER ============ -->
+  <div class="drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer__overlay" data-cart-close></div>
+    <aside class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <header class="drawer__head">
+        <h2 id="cartTitle">Keranjang <span id="cartTitleCount">(0)</span></h2>
+        <button class="icon-btn" type="button" data-cart-close aria-label="Tutup keranjang">
+          <svg class="ico"><use href="#i-x"/></svg>
+        </button>
+      </header>
+      <div class="drawer__body" id="cartItems"></div>
+      <div class="drawer__empty" id="cartEmpty">
+        <span class="drawer__empty-ico"><svg class="ico"><use href="#i-cart"/></svg></span>
+        <h3>Keranjang masih kosong</h3>
+        <p>Tambahkan produk favoritmu, lalu lanjutkan pesanan lewat WhatsApp.</p>
+        <button class="btn btn--ghost btn--sm" type="button" data-cart-close>Lihat produk</button>
+      </div>
+      <footer class="drawer__foot" id="cartFoot" hidden>
+        <div class="drawer__total"><span>Subtotal</span><strong id="cartTotal">Rp0</strong></div>
+        <p class="drawer__note"><svg class="ico"><use href="#i-whatsapp"/></svg> Checkout demo — pesanan diteruskan ke WhatsApp untuk konfirmasi stok &amp; ongkir.</p>
+        <button class="btn btn--primary btn--block" type="button" id="checkoutBtn">
+          <svg class="ico"><use href="#i-send"/></svg> Pesan via WhatsApp
+        </button>
+        <button class="drawer__continue" type="button" data-cart-close>Lanjut belanja</button>
+      </footer>
+    </aside>
+  </div>
+
+  <!-- ============ PRODUCT MODAL ============ -->
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Detail produk">
+      <button class="icon-btn modal__close" type="button" data-modal-close aria-label="Tutup detail produk">
+        <svg class="ico"><use href="#i-x"/></svg>
+      </button>
+      <div class="modal__content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <div class="toasts" id="toasts" aria-live="polite" aria-atomic="false"></div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
